@@ -1,1 +1,23 @@
+//Notes from AWS SimuLearn: Increase Security with VPC Endpoints (N4)
 
+s3://<lab-bucket-233272663859-us-east-1> (s3 bucket)
+
+
+export PS1="\n[\W on Public Command Host] $ "  (Public Host Command)
+export PS1="\n[\W on Private Command Host] $ " (Private Host Command)
+
+
+
+(EndPoint Policy)
+
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": "*",
+			"Resource": "*"
+		}
+	]
+}
